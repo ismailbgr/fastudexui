@@ -1,3 +1,5 @@
+cd ~
+
 echo ' '
 echo ' mmmmmmm  mmmm  mmmmm  mmmmm           mm   mmmmm         m    m mmmmm'
 echo '    #    m"  "m #    # #    #          ##     #           #    #   #'
@@ -8,5 +10,13 @@ echo ' '
 echo ' '
 echo 'Kurulum Başlatılıyor'
 
+mkdir .tobbui
+cd .tobbui
+
 sleep 1;
-wget https://github.com/GitSquared/edex-ui/releases/download/v2.2.7/eDEX-UI-Linux-x86_64.AppImage -O edex.AppImage && chmod +x ui.AppImage && ./ui.AppImage
+wget https://github.com/GitSquared/edex-ui/releases/download/v2.2.7/eDEX-UI-Linux-x86_64.AppImage -O ui.AppImage && chmod +x ui.AppImage 
+
+echo "alias tobbui='~/.tobbui/ui.AppImage' " >> ~/.bash_aliases 
+
+./ui.AppImage
+
