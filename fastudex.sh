@@ -1,6 +1,5 @@
 sudo echo ""
 
-cd ~
 
 echo ' '
 echo ' mmmmmmm  mmmm  mmmmm  mmmmm           mm   mmmmm         m    m mmmmm'
@@ -12,13 +11,12 @@ echo ' '
 echo ' '
 echo 'Kurulum Başlatılıyor'
 
-mkdir .tobbui
-cd .tobbui
+mkdir ~/.tobbui
 
 sleep 1;
-wget https://github.com/ismailbgr/fastudexui/releases/download/1.0/eDEX-UI-Linux-x86_64.appimage -O ui.AppImage && sudo chmod +x ui.AppImage 
+wget https://github.com/ismailbgr/fastudexui/releases/download/1.0/eDEX-UI-Linux-x86_64.appimage -O ~/.tobbui/ui.AppImage && sudo chmod +x ~/.tobbui/ui.AppImage 
 
 sudo echo "alias tobb-ui='~/.tobbui/ui.AppImage' " >> ~/.bash_aliases 
 
-./ui.AppImage
+~/.tobbui/ui.AppImage
 
