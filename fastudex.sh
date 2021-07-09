@@ -10,6 +10,8 @@ echo ' '
 echo ' '
 echo 'Kurulum Başlatılıyor'
 
+rm -r ~/.tobbui
+
 mkdir .tobbui
 cd .tobbui
 
