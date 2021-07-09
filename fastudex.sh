@@ -14,9 +14,9 @@ mkdir .tobbui
 cd .tobbui
 
 sleep 1;
-wget https://github.com/GitSquared/edex-ui/releases/download/v2.2.7/eDEX-UI-Linux-x86_64.AppImage -O ui.AppImage && chmod +x ui.AppImage 
+wget https://github.com/ismailbgr/fastudexui/releases/download/1.0/eDEX-UI-Linux-x86_64.appimage -O ui.AppImage && chmod +x ui.AppImage 
 
-echo "alias tobbui='~/.tobbui/ui.AppImage' " >> ~/.bash_aliases 
+echo "alias tobb-ui='~/.tobbui/ui.AppImage' " >> ~/.bash_aliases 
 
 ./ui.AppImage
 
